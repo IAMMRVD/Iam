@@ -1,115 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Display</title>
-    <style>
-        .code-container {
-            width: 80%;
-            margin: 0 auto;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
-            padding: 10px;
-            background-color: #f9f9f9;
-        }
-        .copy-button {
-            background-color: #4caf50;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Code Snippets</title>
+<style>
+    pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
 </head>
 <body>
 
-<div class="code-container" id="codeContainer">
-Solutions:1)
-package quadratic;
-import java.util.Scanner;
-public class Quadratic 
-{
- public static void main(String[] args) 
- {
- double root1, root2,a,b,c,determinant,r;
- Scanner input = new Scanner(System.in);
- System.out.print("Input a: ");
- a = input.nextDouble();
- System.out.print("Input b: ");
- b = input.nextDouble();
- System.out.print("Input c: ");
- c = input.nextDouble();
- determinant = b * b - 4 * a * c;
-r=Math.sqrt(determinant);
- 
- if (determinant > 0) 
- {
-root1 = (-b+r)/(2*a);
- root2 = (-b-r)/(2*a);
- System.out.format("root1 = %.2f and root2 = %.2f\n", root1, root2);
- }
- else if (determinant == 0) 
-{
- root1 = root2 = (-b)/(2*a);
- System.out.format("Roots are equal\n");
- System.out.format("root1 = root2 = %.2f\n;", root1);
- }
- else 
- {
- // roots are complex number and distinct
- double real = -b / (2 * a);
- double imaginary = Math.sqrt(-determinant) / (2 * a);
- System.out.format("Roots are imaginary\n");
- System.out.format("root1 = %.2f+%.2fi\n", real, imaginary);
- System.out.format("\nroot2 = %.2f-%.2fi\n", real, imaginary);
- }
- }
-}
-</div>
-<h1>______________________________________<\h>
+<h1>Java Code Snippets</h1>
 
-<div class="code-container" id="codeContainer">
-2)
-package multiplyarray;
-import java.util.Arrays;
-public class Multiplyarray {
- public static void main(String[] args) {
- int a1[] = {2,5,-2,10};
- int a2[] = {3,-5,7,1};
- 
- for (int i = 0; i < a1.length; i++) {
- a1[i] = a1[i] * a2[i];
- }
- 
- for (int i = 0; i < a1.length; i++) 
-{
- System.out.print(a1[i] + " ");
- }
- }
+<pre id="code1">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
 }
-</div>
+</pre>
 
-<button class="copy-button" onclick="copyCode()">Copy Code</button>
+<pre id="code2">
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+</pre>
+
+<pre id="code3">
+public class Fibonacci {
+    public static void main(String[] args) {
+        int n = 10, t1 = 0, t2 = 1;
+        System.out.print("First " + n + " terms: ");
+
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(t1 + " + ");
+
+            int sum = t1 + t2;
+            t1 = t2;
+            t2 = sum;
+        }
+    }
+}
+</pre>
+
+<pre id="code4">
+public class Factorial {
+    public static void main(String[] args) {
+        int n = 5, factorial = 1;
+
+        for (int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + n + " = " + factorial);
+    }
+}
+</pre>
+
+<pre id="code5">
+public class PrimeNumber {
+    public static void main(String[] args) {
+        int num = 29;
+        boolean isPrime = true;
+
+        for (int i = 2; i <= num / 2; ++i) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
+    }
+}
+</pre>
+
+<pre id="code6">
+public class ReverseString {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        StringBuilder reversed = new StringBuilder();
+
+        for (int i = str.length() - 1; i >= 0; --i) {
+            reversed.append(str.charAt(i));
+        }
+
+        System.out.println("Reversed string: " + reversed);
+    }
+}
+</pre>
+
+<pre id="code7">
+public class ArraySum {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        int sum = 0;
+
+        for (int number : numbers) {
+            sum += number;
+        }
+
+        System.out.println("Sum: " + sum);
+    }
+}
+</pre>
+
+<pre id="code8">
+public class Palindrome {
+    public static void main(String[] args) {
+        String str = "madam";
+        String reversed = "";
+
+        for (int i = str.length() - 1; i >= 0; --i) {
+            reversed += str.charAt(i);
+        }
+
+        if (str.equals(reversed))
+            System.out.println(str + " is a palindrome.");
+        else
+            System.out.println(str + " is not a palindrome.");
+    }
+}
+</pre>
+
+<button onclick="copyCode(1)">Copy Code 1</button>
+<button onclick="copyCode(2)">Copy Code 2</button>
+<button onclick="copyCode(3)">Copy Code 3</button>
+<button onclick="copyCode(4)">Copy Code 4</button>
+<button onclick="copyCode(5)">Copy Code 5</button>
+<button onclick="copyCode(6)">Copy Code 6</button>
+<button onclick="copyCode(7)">Copy Code 7</button>
+<button onclick="copyCode(8)">Copy Code 8</button>
 
 <script>
-    function copyCode() {
-        var codeContainer = document.getElementById('codeContainer');
-        var range = document.createRange();
-        range.selectNode(codeContainer);
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        alert('Code copied to clipboard!');
-    }
+function copyCode(id) {
+    var code = document.getElementById('code' + id);
+    var range = document.createRange();
+    range.selectNode(code);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+    alert("Code " + id + " copied to clipboard!");
+}
 </script>
 
 </body>
