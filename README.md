@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<h1>Java Code Snippets</h1>
+<h1>Java program see below  copy the code👇</h1>
 
 <pre id="code1">
 package quadratic;
