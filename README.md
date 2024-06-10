@@ -32,8 +32,7 @@
 <body>
 
 <div class="code-container" id="codeContainer">
-    Solutions:
-1)
+Solutions:1)
 package quadratic;
 import java.util.Scanner;
 public class Quadratic 
@@ -71,6 +70,28 @@ root1 = (-b+r)/(2*a);
  System.out.format("Roots are imaginary\n");
  System.out.format("root1 = %.2f+%.2fi\n", real, imaginary);
  System.out.format("\nroot2 = %.2f-%.2fi\n", real, imaginary);
+ }
+ }
+}
+</div>
+<h1>______________________________________<\h>
+
+<div class="code-container" id="codeContainer">
+2)
+package multiplyarray;
+import java.util.Arrays;
+public class Multiplyarray {
+ public static void main(String[] args) {
+ int a1[] = {2,5,-2,10};
+ int a2[] = {3,-5,7,1};
+ 
+ for (int i = 0; i < a1.length; i++) {
+ a1[i] = a1[i] * a2[i];
+ }
+ 
+ for (int i = 0; i < a1.length; i++) 
+{
+ System.out.print(a1[i] + " ");
  }
  }
 }
