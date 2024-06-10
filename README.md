@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -354,6 +354,4 @@ function copyCode(id) {
     alert("Code " + id + " copied to clipboard!");
 }
 </script>
-
-</body>
-</html>
+<h5>created by mr_______d</h5>
