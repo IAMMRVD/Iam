@@ -32,17 +32,48 @@
 <body>
 
 <div class="code-container" id="codeContainer">
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang="en"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-        &lt;title&gt;Code Display&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+    Solutions:
+1)
+package quadratic;
+import java.util.Scanner;
+public class Quadratic 
+{
+ public static void main(String[] args) 
+ {
+ double root1, root2,a,b,c,determinant,r;
+ Scanner input = new Scanner(System.in);
+ System.out.print("Input a: ");
+ a = input.nextDouble();
+ System.out.print("Input b: ");
+ b = input.nextDouble();
+ System.out.print("Input c: ");
+ c = input.nextDouble();
+ determinant = b * b - 4 * a * c;
+r=Math.sqrt(determinant);
+ 
+ if (determinant > 0) 
+ {
+root1 = (-b+r)/(2*a);
+ root2 = (-b-r)/(2*a);
+ System.out.format("root1 = %.2f and root2 = %.2f\n", root1, root2);
+ }
+ else if (determinant == 0) 
+{
+ root1 = root2 = (-b)/(2*a);
+ System.out.format("Roots are equal\n");
+ System.out.format("root1 = root2 = %.2f\n;", root1);
+ }
+ else 
+ {
+ // roots are complex number and distinct
+ double real = -b / (2 * a);
+ double imaginary = Math.sqrt(-determinant) / (2 * a);
+ System.out.format("Roots are imaginary\n");
+ System.out.format("root1 = %.2f+%.2fi\n", real, imaginary);
+ System.out.format("\nroot2 = %.2f-%.2fi\n", real, imaginary);
+ }
+ }
+}
 </div>
 
 <button class="copy-button" onclick="copyCode()">Copy Code</button>
