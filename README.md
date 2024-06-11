@@ -13,7 +13,7 @@
     }
 </style>
 </head>
-<body style="background-color: lightblue; color: darkred;">>
+<body style="background-color: white; color: darkred;">>
 
 <h1>Java program see below  copy the code👇</h1>
 
