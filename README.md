@@ -7,8 +7,8 @@
 <style>
     pre {
         background-color: #f4f4f4;
-        padding: 10px;
-        border-radius: 5px;
+        padding: 1px;
+        border-radius: 1px;
         overflow-x: auto;
     }
 </style>
