@@ -13,7 +13,7 @@
     }
 </style>
 </head>
-<body>
+<body style="background-color: lightblue; color: darkred;">>
 
 <h1>Java program see below  copy the code👇</h1>
 
@@ -308,26 +308,24 @@ public class Packagesdemo {
 </pre>
 <pre id="code9">
 
-(WRITE THESE IN LOER CASE LETTERS)
-package excdemo;
-import java.util.scanner;
+import java.util.Scanner;
 public class excdemo {
-PUBLIC STATIC VOID MAIN(STRING ARGS[]) {
- INT A, B, RESULT;
- SCANNER S = NEW SCANNER(SYSTEM.IN);
- SYSTEM.OUT.PRINTLN("ENTER THE VALUE OF A AND B");
- A = S.NEXTINT();
- B = S.NEXTINT();
- TRY {
-RESULT = A / B;
- INT C[] = {1};
- C[40] = 99;
- } CATCH (ARITHMETICEXCEPTION E) {
- SYSTEM.OUT.PRINTLN("DIVIDE BY 0: " + E);
- } CATCH (ARRAYINDEXOUTOFBOUNDSEXCEPTION E) {
- SYSTEM.OUT.PRINTLN("ARRAY INDEX OUT OF BOUND: " + E);
- }
- SYSTEM.OUT.PRINTLN("AFTER TRY/CATCH BLOCKS.");
+ public static void main(String args[]){
+int a,b,result;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the value of A and B");
+a=s.nextInt();
+b=s.nextInt();
+try{
+  result=a/b;
+  int c[]={1};
+ c[40]=99;
+ } catch(ArithmeticException e){
+  System.out.println("Divide by 0:" +e);
+ } catch(ArrayIndexOutOfBoundsException e){
+System.out.println("Array index out of bound:" +e);
+}
+System.out.println("After try/catch block:" );
 }
 }
 </p>
