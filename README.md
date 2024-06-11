@@ -351,5 +351,5 @@ function copyCode(id) {
     window.getSelection().removeAllRanges();
     alert("Code " + id + " copied to clipboard!");
 }
-</script>
-<h5>created by mr_______d</h5>
+</script> 
+<p style="color: red;">created by mr_______d</p>
