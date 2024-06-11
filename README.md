@@ -17,6 +17,15 @@
 
 <h1>NAVUSA COPY MADTHA IDVI NIVSA MADI👇</h1>
 
+<button onclick="copyCode(1)">Copy Code 1</button>
+<button onclick="copyCode(2)">Copy Code 2</button>
+<button onclick="copyCode(3)">Copy Code 3</button>
+<button onclick="copyCode(4)">Copy Code 4</button>
+<button onclick="copyCode(5)">Copy Code 5</button>
+<button onclick="copyCode(6)">Copy Code 6</button>
+<button onclick="copyCode(7)">Copy Code 7</button>
+<button onclick="copyCode(8)">Copy Code 8</button>
+<button onclick="copyCode(9)">Copy Code 9</button>
 <pre id="code1">
 package quadratic;
 import java.util.Scanner;
