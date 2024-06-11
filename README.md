@@ -13,7 +13,7 @@
     }
 </style>
 </head>
-<body style="background-color: white; color: darkred;">>
+<body style="background-color: white; color: white;">>
 
 <h1>NAVUSA COPY MADTHA IDVI NIVSA MADI👇</h1>
 
