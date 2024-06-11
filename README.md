@@ -15,7 +15,7 @@
 </head>
 <body style="background-color: black; color: darkred;">>
 
-<h1>Java program see below  copy the code👇</h1>
+<h1NAVUSA COPY MADTHA IDVI NIVSA MADI👇</h1>
 
 <pre id="code1">
 package quadratic;
@@ -328,7 +328,7 @@ System.out.println("Array index out of bound:" +e);
 System.out.println("After try/catch block:" );
 }
 }
-</p>
+
 
 <button onclick="copyCode(1)">Copy Code 1</button>
 <button onclick="copyCode(2)">Copy Code 2</button>
