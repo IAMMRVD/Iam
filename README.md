@@ -6,7 +6,7 @@
 <title>Java Code Snippets</title>
 <style>
     pre {
-        background-color: #f4f4f4;
+        background-color: #ffffff;
         padding: 1px;
         border-radius: 1px;
         overflow-x: auto;
