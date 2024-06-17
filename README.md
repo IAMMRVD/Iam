@@ -13,8 +13,17 @@
     }
 </style>
 </head>
-<body style="background-color: white; color: white;">>
 
+<body style="background-color: white; color: white;">>
+<center><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"></center>
+<body style="background-color: white; color: white;">
+
+
+<center><form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="search-query">Enter your search query:</label><br>
+        <input type="text" id="search-query" name="q" required><br><br>
+        <input type="submit" value="Google Search">
+    </form></center>
 <h1>NAVUSA COPY MADTHA IDVI NIVSA MADI</h1>
 
 <button onclick="copyCode(1)">1</button>
