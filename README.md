@@ -36,4 +36,4 @@ function copyCode(id) {
     alert("Code " + id + " copied to clipboard!");
 }
 </script> 
-<p style="color: red;">created by mr_______d</p>
+
